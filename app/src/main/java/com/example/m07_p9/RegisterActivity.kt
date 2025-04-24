@@ -13,6 +13,7 @@ class RegisterActivity : AppCompatActivity() {
         val btnRegister: Button = findViewById(R.id.btn_register)
 
         btnRegister.setOnClickListener {
+            // Simula el registro exitoso
             Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show()
         }
     }
