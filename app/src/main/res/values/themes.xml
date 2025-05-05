@@ -1,8 +1,11 @@
+<!-- themes.xml -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.M07P9" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.M07P9" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="colorOnBackground">@color/md_theme_onSurface</item>
+        <item name="colorSurface">@color/md_theme_background</item>
+        <item name="colorOnSurface">@color/md_theme_onSurface</item>
     </style>
 
     <style name="Theme.M07P9" parent="Base.Theme.M07P9" />
