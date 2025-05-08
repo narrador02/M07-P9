@@ -38,13 +38,14 @@ class RegisterViewModel : ViewModel() {
 
     private fun validarPassword(pass: String): String {
         if (pass.length < 8) return "Ha de tenir mínim 8 caràcters"
+        if (pass.contains(" ")) return "No es permeten espais"
         if (!Regex("[A-Z]").containsMatchIn(pass)) return "Ha de contenir una majúscula"
         if (!Regex("\\d").containsMatchIn(pass)) return "Ha de contenir almenys un número"
-        if (pass.contains(" ")) return "No es permeten espais"
         return ""
     }
 
     private fun validarConfirmacio(pass: String, conf: String): String {
+        if (conf.isEmpty()) return "Cal confirmar la contrasenya"
         return if (pass != conf) "No coincideixen" else ""
     }
 }
